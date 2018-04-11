@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Simple FPS Meter</title>
+<meta name="description" content="Extremely small and simple fps meter widget">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+*, ::before, ::after {
+  box-sizing: inherit;
+  outline: none;
+}
+html {
+  box-sizing: border-box;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="css/normalize-8.0.0.css">
+<link rel="stylesheet" type="text/css" href="css/simple-fps-meter.css">
+<style type="text/css">
+html {
+  font-family: sans-serif;
+  overflow: hidden;
+  background-color: #000;
+  animation: animatebackground 32s linear infinite;
+}
+
+h1 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@keyframes animatebackground {
+  0% {
+    background-color: #000;
+  }
+  12.5% {
+    background-color: #f00;
+  }
+  25% {
+    background-color: #ff0;
+  }
+  37.5% {
+    background-color: #0f0;
+  }
+  50% {
+    background-color: #0ff;
+  }
+  62.5% {
+    background-color: #00f;
+  }
+  75% {
+    background-color: #f0f;
+  }
+  87.5% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #000;
+  }
+}
+
+a {
+  position: fixed;
+  display: block;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 8px 16px;
+  border: 1px solid #fff;
+  z-index: 2;
+
+  outline: none;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+<div class="fpsmeter btn" style="left: 4px; top: 4px;">0.00 fps</div>
+<div class="fpsmeter btn" style="top: 4px; right: 4px;">0.00 fps</div>
+<div class="fpsmeter btn" style="bottom: 4px; right: 4px;">0.00 fps</div>
+<div class="fpsmeter btn" style="left: 4px; bottom: 4px;">0.00 fps</div>
+
+<div class="fpsmeter btn" style="left: 50%; top: 4px; transform: translate(-50%, 0%);">0.00 fps</div>
+<div class="fpsmeter btn" style="right: 4px; top: 50%; transform: translate(0%, -50%);">0.00 fps</div>
+<div class="fpsmeter btn" style="left: 50%; bottom: 4px; transform: translate(-50%, 0%);">0.00 fps</div>
+<div class="fpsmeter btn" style="left: 4px; top: 50%; transform: translate(0%, -50%);">0.00 fps</div>
+
+<a href="https://github.com/yesasha/simple-fps-meter"><h1>Simple FPS Meter</h1></a>
+<script src="js/simple-fps-meter.min.js" async defer></script>
+</body>
+</html>
