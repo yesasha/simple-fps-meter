@@ -14,6 +14,8 @@ Extremely small and simple fps meter widget.
 ## TODO
 - Add configurable options, like update frequency. Now it is set to once per second.
 - Add more default styles to choose from.
+- Make an option to create a widget automatically, without need to create a div and style it with css.
+- Make a bookmarklet, that when pressed, adds this widget to any other page.
 - Fix current default styles to make it more stylish if users request.
 
 ## Usage
