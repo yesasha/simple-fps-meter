@@ -7,12 +7,12 @@ Extremely small and simple fps meter widget.
 - All modern browsers support.
 - ~300 bytes(!) compressed javascript(not gzip)!
 - No need to write any javascript code, just connect the script to your page, and insert a `<div class="simple-fps-meter"></div>` to your page.
-- Position and style it with css. Some default css provided.
+- Position and style it with css. Some default css provided to make it visible on different backgrounds.
 - May have any number of widgets per page, that will be detected automatically. No extra code edits!
 - Example page - https://yesasha.github.io/simple-fps-meter/
 
 ## TODO
-- Add configurable options, like update frequency.
+- Add configurable options, like update frequency. Now it is set to once per second.
 - Add more default styles to choose from.
 - Fix current default styles to make it more stylish if users request.
 
