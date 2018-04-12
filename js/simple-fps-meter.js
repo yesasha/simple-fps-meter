@@ -35,4 +35,4 @@ function fpsRender (timestamp) {
   counter++;
   rAF(fpsRender);
 }
-})('fpsmeter');
+})('simple-fps-meter');
